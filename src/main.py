@@ -3,12 +3,14 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QVBoxLayout, QWid
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import Qt
 from src.tools.animation_tool import AnimationTool
+from src.tools.photo_upload_tool import PhotoUploadTool
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.initUI()
         self.animation_tool = AnimationTool()
+        self.photo_upload_tool = PhotoUploadTool()
 
     def initUI(self):
         self.setWindowTitle('Star Art Studio')
@@ -39,6 +41,17 @@ class MainWindow(QMainWindow):
         animation_layout.addWidget(play_animation_button)
 
         layout.addLayout(animation_layout)
+
+        photo_upload_layout = QHBoxLayout()
+        upload_photo_button = QPushButton('Upload Photo', self)
+        upload_photo_button.clicked.connect(self.photo_upload_tool.upload_photo)
+        photo_upload_layout.addWidget(upload_photo_button)
+
+        process_photo_button = QPushButton('Reimagine with AI', self)
+        process_photo_button.clicked.connect(self.photo_upload_tool.process_photo)
+        photo_upload_layout.addWidget(process_photo_button)
+
+        layout.addLayout(photo_upload_layout)
 
         self.show()
 

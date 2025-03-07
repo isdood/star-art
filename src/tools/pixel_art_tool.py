@@ -27,3 +27,11 @@ class PixelArtTool:
 
     def export_frame(self):
         return self.canvas
+
+    def reimagine_with_ai(self, ai_model):
+        canvas_array = np.array(self.canvas) / 255.0
+        canvas_array = np.expand_dims(canvas_array, axis=0)
+        ai_pixel_art = ai_model.predict(canvas_array)
+        ai_pixel_art = np.squeeze(ai_pixel_art, axis=0)
+        ai_pixel_art = (ai_pixel_art * 255).astype(np.uint8)
+        self.canvas = ai_pixel_art.tolist()

@@ -58,6 +58,8 @@ A cross-platform studio for developing pixel art, with AI integration &amp; tool
 3. Explore the AI integration features to enhance your artwork.
 4. Customize the UI/theming elements to suit your preferences.
 5. Use the animation tool to create and manage frame-by-frame animations.
+6. Upload a photo using the "Upload Photo" button.
+7. Reimagine the uploaded photo in a pixel art format using the "Reimagine with AI" button.
 
 ## Contributing Guidelines
 1. Fork the repository.
