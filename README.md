@@ -36,6 +36,22 @@ A cross-platform studio for developing pixel art, with AI integration &amp; tool
    python src/main.py
    ```
 
+### Web Version
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/isdood/star-art.git
+   cd star-art
+   ```
+2. Navigate to the `web` directory:
+   ```sh
+   cd web
+   ```
+3. Start a local web server:
+   ```sh
+   python -m http.server
+   ```
+4. Open your web browser and go to `http://localhost:8000` to run the application.
+
 ## Usage Instructions
 1. Launch the application.
 2. Use the pixel art tool-kits to create and edit pixel art.
