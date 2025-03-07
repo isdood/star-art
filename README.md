@@ -41,6 +41,7 @@ A cross-platform studio for developing pixel art, with AI integration &amp; tool
 2. Use the pixel art tool-kits to create and edit pixel art.
 3. Explore the AI integration features to enhance your artwork.
 4. Customize the UI/theming elements to suit your preferences.
+5. Use the animation tool to create and manage frame-by-frame animations.
 
 ## Contributing Guidelines
 1. Fork the repository.

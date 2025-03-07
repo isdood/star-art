@@ -24,3 +24,6 @@ class PixelArtTool:
         for y in range(self.height):
             for x in range(self.width):
                 self.set_pixel(x, y, color)
+
+    def export_frame(self):
+        return self.canvas
